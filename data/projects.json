@@ -5,6 +5,6 @@
     "stack": ["Next.js", "TypeScript", "Tailwind", "Groq"],
     "demo": "https://chatbot-personajes.vercel.app",
     "repo": "https://github.com/manuelterraardoguein1/chatbot-personajes",
-    "screenshot": ""
+    "screenshot": "/screenshots/chatbot-personajes.png"
   }
 ]
