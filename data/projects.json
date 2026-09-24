@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "nombre": "Chatbot de Personajes",
+    "descripcion": "Chateá con personajes de ficción (Gandalf, Darth Vader, Yoda, Sherlock) con respuestas generadas por IA en tiempo real.",
+    "stack": ["Next.js", "TypeScript", "Tailwind", "Groq"],
+    "demo": "https://chatbot-personajes.vercel.app",
+    "repo": "https://github.com/manuelterraardoguein1/chatbot-personajes",
+    "screenshot": ""
+  }
+]
