@@ -3,12 +3,17 @@ import { Project } from "@/types/project";
 export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="group flex flex-col overflow-hidden rounded-lg border border-black/10 dark:border-white/15 transition-colors hover:border-black/30 dark:hover:border-white/30">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={project.screenshot}
-        alt={`Screenshot de ${project.nombre}`}
-        className="aspect-video w-full object-cover"
-      />
+      {project.screenshot ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={project.screenshot}
+          alt={`Screenshot de ${project.nombre}`}
+          className="aspect-video w-full object-cover"
+        />
+      ) : (
+        // Same size as the screenshot so cards stay aligned in the grid.
+        <div aria-hidden className="aspect-video w-full bg-black/5 dark:bg-white/5" />
+      )}
       <div className="flex flex-1 flex-col gap-3 p-5">
         <h2 className="text-lg font-medium">{project.nombre}</h2>
         <p className="text-sm text-black/70 dark:text-white/70">
